@@ -1,0 +1,27 @@
+{
+  "name": "sample-vega-gantt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kannkyo/sample-vega-gantt.git"
+  },
+  "keywords": [
+    "vega"
+  ],
+  "author": "kannkyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kannkyo/sample-vega-gantt/issues"
+  },
+  "homepage": "https://github.com/kannkyo/sample-vega-gantt#readme",
+  "dependencies": {
+    "vega": "^4.4.0",
+    "vega-embed": "^3.29.0",
+    "vega-lite": "^3.0.0-rc12"
+  }
+}
