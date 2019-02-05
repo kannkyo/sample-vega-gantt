@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>Vega-Lite Bar Chart</title>
+    <title>vega-lite-gantt</title>
     <meta charset="utf-8" />
 
     <script src="node_modules/vega/build/vega.js"></script>
@@ -17,12 +17,21 @@
     </style>
   </head>
   <body>
-    <h1>Template for Embedding Vega-Lite Visualization</h1>
+    <h1>vega-lite-gantt</h1>
     <!-- Container for the visualization -->
     <div id="vis"></div>
 
     <script>
-      vega.timeFormatLocale(timeFormat);
+      vega.timeFormatLocale({
+        "dateTime": "%Y %b %e %a %X",
+        "date": "%Y/%m/%d",
+        "time": "%H:%M:%S",
+        "periods": ["AM", "PM"],
+        "days": ["日", "月", "火", "水", "木", "金", "土"],
+        "shortDays": ["日", "月", "火", "水", "木", "金", "土"],
+        "months": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+        "shortMonths": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
+      });
 
       // Embed the visualization in the container with id `vis`
       vegaEmbed('#vis', vlSpec);
