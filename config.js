@@ -25,12 +25,14 @@ var vlSpec = {
   "mark": {"type": "bar", "tooltip": {"content": "data"}},
   "encoding": {
     "y" : {"field": "task", "type": "ordinal"},
-    "x" : {"field": "start", "type": "temporal"},
-    "x2": {"field": "end"},
+    "x" : {"field": "aos", "type": "temporal"},
+    "x2": {"field": "los"},
     "tooltip": [
       {"field": "task", "type": "ordinal"},
-      {"field": "start", "type": "temporal"},
-      {"field": "end", "type": "temporal"}
+      {"field": "gs", "type": "ordinal"},
+      {"field": "sat", "type": "ordinal"},
+      {"field": "aos", "type": "temporal"},
+      {"field": "los", "type": "temporal"}
     ]
   },
   "config": {
