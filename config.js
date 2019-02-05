@@ -22,7 +22,7 @@ var vlSpec = {
   "data": {
     "url": "data.csv"
   },
-  "mark": {"type": "bar", "tooltip": {"content": "data"}},
+  "mark": {"type": "bar"},
   "encoding": {
     "y" : {"field": "task", "type": "ordinal"},
     "x" : {"field": "aos", "type": "temporal"},
