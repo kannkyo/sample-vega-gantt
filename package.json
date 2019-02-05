@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/kannkyo/sample-vega-gantt#readme",
   "dependencies": {
+    "simple-text-parser": "^1.0.0",
     "vega": "^4.4.0",
     "vega-embed": "^3.29.0",
     "vega-lite": "^3.0.0-rc12"
